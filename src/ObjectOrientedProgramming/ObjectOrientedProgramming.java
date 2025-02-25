@@ -1,3 +1,5 @@
+package ObjectOrientedProgramming;
+
 public class ObjectOrientedProgramming {
     public static void main(String[] args) {
         // Object = An entity that holds data (attributes)
