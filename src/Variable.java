@@ -14,7 +14,24 @@ public class Variable {
         // 1. declaration
         // 2.assignment
 
-        
+        int year = 2025;
+        double price = 19.99;
+        char grade = 'A';
+        boolean isStudents = true;
+        String food = "pizza";
+
+        System.out.println("The year is " + year);
+        System.out.println("$" + price);
+        System.out.println(grade);
+
+        if (isStudents) {
+            System.out.println("You are a student!");
+
+        } else {
+            System.out.println("You are NOT a student!");
+        }
+
+        System.out.println("Your favorite food is: " + food);
     }
 
 }
