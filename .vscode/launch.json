@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Variable",
+      "request": "launch",
+      "mainClass": "Variable",
+      "projectName": "learn-java_389383e7"
+    },
+    {
+      "type": "java",
       "name": "App",
       "request": "launch",
       "mainClass": "App",
