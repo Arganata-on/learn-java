@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class calculateAreaRectangle {
+public class CalculateAreaRectangle {
     public static void main(String[] args) {
         // Calculate area of the rectangle
 
