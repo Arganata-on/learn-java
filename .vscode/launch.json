@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Printf",
+      "request": "launch",
+      "mainClass": "Printf",
+      "projectName": "learn-java_389383e7"
+    },
+    {
+      "type": "java",
       "name": "userInput",
       "request": "launch",
       "mainClass": "userInput",
