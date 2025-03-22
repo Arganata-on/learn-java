@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "ContohSoal",
+      "request": "launch",
+      "mainClass": "ContohSoal.ContohSoal",
+      "projectName": "learn-java_389383e7"
+    },
+    {
+      "type": "java",
       "name": "Printf",
       "request": "launch",
       "mainClass": "Printf",
