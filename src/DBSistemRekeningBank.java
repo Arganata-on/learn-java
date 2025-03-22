@@ -15,11 +15,11 @@ public class DBSistemRekeningBank {
         int pilihan;
 
         do {
-            System.out.println("Pilih Aksi: ");
+            System.out.println("Pilih aksi: ");
             System.out.println("1. Deposit");
             System.out.println("2. Withdraw");
             System.out.println("3. Exit");
-            System.out.println("Masukkan Pilihan: ");
+            System.out.print("Masukkan pilihan: ");
             pilihan = scanner.nextInt();
 
             if (pilihan == 1) {
@@ -31,9 +31,9 @@ public class DBSistemRekeningBank {
                 rekening.withdraw();
                 rekening.info();
             } else if (pilihan == 3) {
-                System.out.println("Terima Kasih!");
+                System.out.println("Terima kasih!");
             } else {
-                System.out.println("Pilihan Tidak Valid!");
+                System.out.println("Pilihan tidak valid!");
                 rekening.info();
             }
         } while (pilihan != 3);
