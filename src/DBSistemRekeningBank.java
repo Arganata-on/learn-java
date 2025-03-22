@@ -20,6 +20,10 @@ public class DBSistemRekeningBank {
             rekening.info();
         }
 
+        else if (pilihan == 'W') {
+
+        }
+
         scanner.close();
     }
 }
