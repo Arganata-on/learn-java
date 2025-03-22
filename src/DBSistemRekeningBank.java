@@ -12,18 +12,22 @@ public class DBSistemRekeningBank {
 
         rekening.info();
 
-        System.out.println("Deposit atau Withdraw?");
-        char pilihan = scanner.next().charAt(0);
+        char pilihan;
 
-        if (pilihan == 'D') {
-            rekening.deposit();
-            rekening.info();
-        }
+        do {
+            System.out.println("Deposit(d) atau Withdraw(w)?");
+            pilihan = scanner.next().charAt(0);
 
-        else if (pilihan == 'W') {
-            rekening.withdraw();
-            rekening.info();
-        }
+            if (pilihan == 'd') {
+                rekening.deposit();
+                rekening.info();
+            }
+
+            else if (pilihan == 'w') {
+                rekening.withdraw();
+                rekening.info();
+            }
+        } while (pilihan != 'd' && pilihan != 'w');
 
         scanner.close();
     }
