@@ -2,14 +2,14 @@ import java.util.Scanner;
 
 public class DBRekening {
     private String nama;
-    private int nomorRekening;
+    private String nomorRekening;
     private double saldo;
 
     public void setNama(String nama) {
         this.nama = nama;
     }
 
-    public void setNomorRekening(int nomorRekening) {
+    public void setNomorRekening(String nomorRekening) {
         this.nomorRekening = nomorRekening;
     }
 
@@ -32,9 +32,24 @@ public class DBRekening {
     public void deposit() {
         System.out.print("Masukkan Jumlah Deposit: ");
         double deposit = scanner.nextDouble();
-        if (deposit > 10000) {
+        if (deposit >= 10000) {
             System.out.println("\nDeposit Berhasil!");
             saldo += deposit;
+        } else {
+            System.out.println("Jumlah Minimal Deposit Tidak Memenuhi!");
+            System.exit(0);
+        }
+    }
+
+    public void withdraw() {
+        System.out.print("Masukkan Jumlah Withdraw: ");
+        double withdraw = scanner.nextDouble();
+        if (withdraw >= 10000) {
+            System.out.println("\nWithdraw Berhasil!");
+            saldo -= withdraw;
+        } else {
+            System.out.println("Jumlah Minimal Withdraw Tidak Memenuhi!");
+            System.exit(0);
         }
     }
 
