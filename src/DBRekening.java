@@ -30,27 +30,37 @@ public class DBRekening {
     Scanner scanner = new Scanner(System.in);
 
     public void deposit() {
-        System.out.print("Masukkan Jumlah Deposit: ");
+        System.out.print("Masukkan jumlah Deposit: ");
         double deposit = scanner.nextDouble();
         if (deposit >= 10000) {
             System.out.println("\nDeposit Berhasil!");
             saldo += deposit;
         } else {
-            System.out.println("Jumlah Minimal Deposit Tidak Memenuhi!");
+            System.out.println("Jumlah minimal Deposit tidak memenuhi!");
             System.exit(0);
         }
     }
 
     public void withdraw() {
-        System.out.print("Masukkan Jumlah Withdraw: ");
-        double withdraw = scanner.nextDouble();
-        if (withdraw >= 10000) {
-            System.out.println("\nWithdraw Berhasil!");
-            saldo -= withdraw;
-        } else {
-            System.out.println("Jumlah Minimal Withdraw Tidak Memenuhi!");
-            System.exit(0);
-        }
+        double withdraw;
+
+        do {
+            System.out.print("\nMasukkan jumlah Withdraw: ");
+            withdraw = scanner.nextDouble();
+
+            if (withdraw > saldo) {
+                System.out.println("Saldo tidak mencukupi!");
+                System.out.printf("Saldo: %,.2f\n\n", saldo);
+            } else if (withdraw >= 10000) {
+                System.out.println("\nWithdraw berhasil!");
+                saldo -= withdraw;
+                break;
+            } else {
+
+                System.out.println("Jumlah minimal withdraw tidak memenuhi!");
+                System.exit(0);
+            }
+        } while (withdraw > saldo);
     }
 
 }
