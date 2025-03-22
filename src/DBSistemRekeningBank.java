@@ -7,7 +7,7 @@ public class DBSistemRekeningBank {
         Scanner scanner = new Scanner(System.in);
 
         rekening.setNama("Handika Rado Arganata");
-        rekening.setNomorRekening(1234);
+        rekening.setNomorRekening("1234-5678-9012-34");
         rekening.setSaldo(100000);
 
         rekening.info();
@@ -21,7 +21,8 @@ public class DBSistemRekeningBank {
         }
 
         else if (pilihan == 'W') {
-
+            rekening.withdraw();
+            rekening.info();
         }
 
         scanner.close();
