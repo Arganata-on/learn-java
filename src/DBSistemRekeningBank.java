@@ -31,7 +31,7 @@ public class DBSistemRekeningBank {
                 rekening.withdraw();
                 rekening.info();
             } else if (pilihan == 3) {
-                System.out.println("Terima kasih!");
+                System.out.println("\nTerima kasih!");
             } else {
                 System.out.println("Pilihan tidak valid!");
                 rekening.info();
