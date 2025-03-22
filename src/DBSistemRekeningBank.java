@@ -12,22 +12,31 @@ public class DBSistemRekeningBank {
 
         rekening.info();
 
-        char pilihan;
+        int pilihan;
 
         do {
-            System.out.println("Deposit(d) atau Withdraw(w)?");
-            pilihan = scanner.next().charAt(0);
+            System.out.println("Pilih Aksi: ");
+            System.out.println("1. Deposit");
+            System.out.println("2. Withdraw");
+            System.out.println("3. Exit");
+            System.out.println("Masukkan Pilihan: ");
+            pilihan = scanner.nextInt();
 
-            if (pilihan == 'd') {
+            if (pilihan == 1) {
                 rekening.deposit();
                 rekening.info();
             }
 
-            else if (pilihan == 'w') {
+            else if (pilihan == 2) {
                 rekening.withdraw();
                 rekening.info();
+            } else if (pilihan == 3) {
+                System.out.println("Terima Kasih!");
+            } else {
+                System.out.println("Pilihan Tidak Valid!");
+                rekening.info();
             }
-        } while (pilihan != 'd' && pilihan != 'w');
+        } while (pilihan != 3);
 
         scanner.close();
     }
