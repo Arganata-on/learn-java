@@ -6,7 +6,7 @@ public class ContohSoalDatabase {
     public static void main(String[] args) {
         String url = "jdbc:mysql://localhost:3306/student_db";
         String username = "root";
-        String password = "nolep2133";
+        String password = "waduh";
 
         try (Connection connection = DriverManager.getConnection(url, username, password)) {
             System.out.println("Koneksi berhasil!");
