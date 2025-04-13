@@ -5,13 +5,13 @@ public class ObjectOrientedProgramming {
         // and can perform actions (methods)
         // It is a reference data type
 
-        Car car = new Car();
+        // Car car = new Car();
 
-        System.out.println(car.make);
-        System.out.println(car.model);
-        System.out.println(car.year);
-        System.out.println(car.price);
-        System.out.println(car.isRunning);
+        // System.out.println(car.make);
+        // System.out.println(car.model);
+        // System.out.println(car.year);
+        // System.out.println(car.price);
+        // System.out.println(car.isRunning);
 
     }
 }
