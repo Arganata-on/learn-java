@@ -8,7 +8,7 @@ public class BankApplication {
         System.out.println("Nama pemilik: " + ba.getNamaPemilik());
         System.out.printf("Saldo awal: Rp%,.2f%n", ba.getSaldo());
 
-        // ba.deposit(10000);
+        ba.deposit(10000);
         ba.withdraw(2000);
     }
 }
