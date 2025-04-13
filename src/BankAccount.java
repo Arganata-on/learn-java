@@ -30,7 +30,7 @@ public class BankAccount {
     public void deposit(double ammount) {
         if (ammount > 0) {
             saldo += ammount;
-            System.out.println("Deposit sebesar " + ammount + " berhasil. Saldo sekarang: " + saldo);
+            System.out.printf("Deposit sebesar Rp%,.2f berhasil. Saldo sekarang: Rp%,.2f%n", ammount, saldo);
         } else {
             System.out.println("Jumlah deposit harus positif!");
         }
@@ -40,7 +40,7 @@ public class BankAccount {
         if (ammount > 0) {
             if (ammount <= saldo) {
                 saldo -= ammount;
-                System.out.println("Penarikan sebesar " + ammount + " berhasil. Saldo sekarang: " + saldo);
+                System.out.printf("Penarikan sebesar Rp%,.2f berhasil. Saldo sekarang: Rp%,.2f%n", ammount, saldo);
             } else {
                 System.out.println("Saldo tidak mencukupi untuk penarikan");
             }
