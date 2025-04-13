@@ -6,6 +6,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "ArrayObject",
+      "request": "launch",
+      "mainClass": "ArrayObject",
+      "projectName": "learn-java_389383e7"
+    },
+    {
+      "type": "java",
+      "name": "MoneyCurrency",
+      "request": "launch",
+      "mainClass": "MoneyCurrency",
+      "projectName": "learn-java_389383e7"
+    },
+    {
+      "type": "java",
+      "name": "BankApplication",
+      "request": "launch",
+      "mainClass": "BankApplication",
+      "projectName": "learn-java_389383e7"
+    },
+    {
+      "type": "java",
       "name": "ArrayObjects",
       "request": "launch",
       "mainClass": "ArrayObjects",
