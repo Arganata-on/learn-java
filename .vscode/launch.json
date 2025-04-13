@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Static",
+      "request": "launch",
+      "mainClass": "Static",
+      "projectName": "learn-java_389383e7"
+    },
+    {
+      "type": "java",
       "name": "ArrayObject",
       "request": "launch",
       "mainClass": "ArrayObject",
