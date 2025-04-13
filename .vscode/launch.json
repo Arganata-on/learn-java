@@ -6,6 +6,34 @@
   "configurations": [
     {
       "type": "java",
+      "name": "ArrayObjects",
+      "request": "launch",
+      "mainClass": "ArrayObjects",
+      "projectName": "learn-java_389383e7"
+    },
+    {
+      "type": "java",
+      "name": "ArrayListSorting",
+      "request": "launch",
+      "mainClass": "ArrayListSorting",
+      "projectName": "learn-java_389383e7"
+    },
+    {
+      "type": "java",
+      "name": "Array_List",
+      "request": "launch",
+      "mainClass": "Array_List",
+      "projectName": "learn-java_389383e7"
+    },
+    {
+      "type": "java",
+      "name": "OverloadedConstructor",
+      "request": "launch",
+      "mainClass": "OverloadedConstructor",
+      "projectName": "learn-java_389383e7"
+    },
+    {
+      "type": "java",
       "name": "ContohSoal",
       "request": "launch",
       "mainClass": "ContohSoal.ContohSoal",
