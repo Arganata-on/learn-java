@@ -6,21 +6,23 @@ public class App {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Pilih Bangun Ruang: ");
+        System.out.println("Menu Bangun Ruang: ");
         System.out.println("1. Kubus");
         System.out.println("2. Balok");
-        System.out.println("WIP");
-        System.out.println("WIP");
+        System.out.println("3. Silinder");
+        System.out.println("4. Bola");
+        System.out.print("Masukkan pilihan (1-4): ");
         int menu1 = scanner.nextInt();
 
-        System.out.println("\nPilih rumus: ");
+        System.out.println("\nMenu Rumus: ");
         System.out.println("1. Volume");
         System.out.println("2. Luas");
+        System.out.print("Masukkan pilihan (1-2): ");
         int menu2 = scanner.nextInt();
 
         switch (menu1) {
             case 1:
-                System.out.print("\nMasukkan rusuk kubus dalam cm: ");
+                System.out.print("\nMasukkan rusuk kubus (cm): ");
                 int rusuk = scanner.nextInt();
 
                 BangunRuang kubus = new BangunRuang(rusuk);
@@ -31,17 +33,18 @@ public class App {
                         break;
                     case 2:
                         kubus.menghitungLuasKubus();
+                        break;
                     default:
                         System.out.println("Data tidak Valid!");
                         break;
                 }
                 break;
             case 2:
-                System.out.print("\nMasukkan panjang balok dalam cm: ");
+                System.out.print("\nMasukkan panjang balok (cm): ");
                 int panjang = scanner.nextInt();
-                System.out.print("Masukkan lebar balok dalam cm: ");
+                System.out.print("Masukkan lebar balok (cm): ");
                 int lebar = scanner.nextInt();
-                System.out.print("Masukkan tinggi balok dalam cm: ");
+                System.out.print("Masukkan tinggi balok (cm): ");
                 int tinggi = scanner.nextInt();
 
                 BangunRuang balok = new BangunRuang(panjang, lebar, tinggi);
@@ -59,9 +62,9 @@ public class App {
                 }
                 break;
             case 3:
-                System.out.println("Masukkan jari-jari silinder dalam cm: ");
+                System.out.print("Masukkan jari-jari silinder dalam cm: ");
                 int jari = scanner.nextInt();
-                System.out.println("Masukkan tinggi silinder dalam cm: ");
+                System.out.print("Masukkan tinggi silinder dalam cm: ");
                 tinggi = scanner.nextInt();
 
                 BangunRuang silinder = new BangunRuang(jari, tinggi);
