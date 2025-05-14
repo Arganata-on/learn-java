@@ -50,8 +50,11 @@ public class App {
                     case 1:
                         balok.menghitungVolumeBalok();
                         break;
-
+                    case 2:
+                        balok.menghitungLuasBalok();
+                        break;
                     default:
+                        System.out.println("Data tidak Valid!");
                         break;
                 }
                 break;
