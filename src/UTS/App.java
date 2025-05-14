@@ -20,7 +20,7 @@ public class App {
 
         switch (menu1) {
             case 1:
-                System.out.println("\nMasukkan rusuk kubus dalam cm: ");
+                System.out.print("\nMasukkan rusuk kubus dalam cm: ");
                 int rusuk = scanner.nextInt();
 
                 BangunRuang kubus = new BangunRuang(rusuk);
@@ -37,11 +37,11 @@ public class App {
                 }
                 break;
             case 2:
-                System.out.println("Masukkan panjang balok dalam cm: ");
+                System.out.print("\nMasukkan panjang balok dalam cm: ");
                 int panjang = scanner.nextInt();
-                System.out.println("Masukkan lebar balok dalam cm: ");
+                System.out.print("Masukkan lebar balok dalam cm: ");
                 int lebar = scanner.nextInt();
-                System.out.println("Masukkan tinggi balok dalam cm: ");
+                System.out.print("Masukkan tinggi balok dalam cm: ");
                 int tinggi = scanner.nextInt();
 
                 BangunRuang balok = new BangunRuang(panjang, lebar, tinggi);
@@ -58,8 +58,29 @@ public class App {
                         break;
                 }
                 break;
+            case 3:
+                System.out.println("Masukkan jari-jari silinder dalam cm: ");
+                int jari = scanner.nextInt();
+                System.out.println("Masukkan tinggi silinder dalam cm: ");
+                tinggi = scanner.nextInt();
 
+                BangunRuang silinder = new BangunRuang(jari, tinggi);
+
+                switch (menu2) {
+                    case 1:
+                        silinder.menghitungVolumeSilinder();
+                        break;
+                    case 2:
+                        silinder.menghitungLuasSilinder();
+                        break;
+
+                    default:
+                        System.out.println("Data tidak valid!");
+                        break;
+                }
+                break;
             default:
+                System.out.println("Data tidak Valid!");
                 break;
         }
 
