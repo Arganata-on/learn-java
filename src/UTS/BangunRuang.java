@@ -29,4 +29,9 @@ public class BangunRuang {
         System.out.println(volume);
     }
 
+    public void menghitungLuasBalok() {
+        luas = 2 * ((panjang * lebar) + (panjang * tinggi) + (lebar * tinggi));
+        System.out.println(luas);
+    }
+
 }
