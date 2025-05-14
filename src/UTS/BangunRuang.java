@@ -14,6 +14,11 @@ public class BangunRuang {
         this.tinggi = tinggi;
     }
 
+    public BangunRuang(int jari, int tinggi) {
+        this.jari = jari;
+        this.tinggi = tinggi;
+    }
+
     public void menghitungVolumeKubus() {
         volume = Math.pow(rusuk, 3);
         System.out.println("Volume kubus: " + volume);
@@ -32,6 +37,15 @@ public class BangunRuang {
     public void menghitungLuasBalok() {
         luas = 2 * ((panjang * lebar) + (panjang * tinggi) + (lebar * tinggi));
         System.out.println(luas);
+    }
+
+    public void menghitungVolumeSilinder() {
+        volume = Math.PI * Math.pow(jari, 2) * tinggi;
+        System.out.println(volume);
+    }
+
+    public void menghitungLuasSilinder() {
+        luas = 2 * Math.PI * jari * (jari + tinggi);
     }
 
 }
