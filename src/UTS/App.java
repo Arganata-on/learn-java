@@ -91,6 +91,7 @@ public class App {
                 switch (menu2) {
                     case 1:
                         bola.menghitungVolumeBola();
+                        break;
                     case 2:
                         bola.menghitungLuasBola();
                         break;
