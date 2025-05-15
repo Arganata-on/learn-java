@@ -1,8 +1,8 @@
 package UTS;
 
 public class BangunRuang {
-    private int rusuk;
-    private double panjang, lebar, tinggi, jari, volume = 0, luas = 0;
+    int rusuk;
+    double panjang, lebar, tinggi, jari, volume = 0, luas = 0;
 
     public BangunRuang(int rusuk) {
         this.rusuk = rusuk;
