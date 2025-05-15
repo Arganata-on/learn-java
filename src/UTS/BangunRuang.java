@@ -2,7 +2,7 @@ package UTS;
 
 public class BangunRuang {
     private int rusuk;
-    private double panjang, lebar, tinggi, jari, volume, luas;
+    private double panjang, lebar, tinggi, jari, volume = 0, luas = 0;
 
     public BangunRuang(int rusuk) {
         this.rusuk = rusuk;
@@ -14,9 +14,13 @@ public class BangunRuang {
         this.tinggi = tinggi;
     }
 
-    public BangunRuang(int jari, int tinggi) {
+    public BangunRuang(double jari, int tinggi) {
         this.jari = jari;
         this.tinggi = tinggi;
+    }
+
+    public BangunRuang(double jari) {
+        this.jari = jari;
     }
 
     public void menghitungVolumeKubus() {
@@ -47,6 +51,16 @@ public class BangunRuang {
     public void menghitungLuasSilinder() {
         luas = 2 * Math.PI * jari * (jari + tinggi);
         System.out.println("\nLuas silinder: " + luas + "cm³\n");
+    }
+
+    public void menghitungVolumeBola() {
+        volume = 4.0 / 3.0 * Math.PI * Math.pow(jari, 3);
+        System.out.println("Volume bola: " + volume + "cm³\n");
+    }
+
+    public void menghitungLuasBola() {
+        luas = 4 * Math.PI * Math.pow(jari, 2);
+        System.out.println("Luas bola: " + luas);
     }
 
 }
