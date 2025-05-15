@@ -62,8 +62,8 @@ public class App {
                 }
                 break;
             case 3:
-                System.out.print("Masukkan jari-jari silinder dalam cm: ");
-                int jari = scanner.nextInt();
+                System.out.print("\nMasukkan jari-jari silinder dalam cm: ");
+                double jari = scanner.nextInt();
                 System.out.print("Masukkan tinggi silinder dalam cm: ");
                 tinggi = scanner.nextInt();
 
@@ -77,6 +77,23 @@ public class App {
                         silinder.menghitungLuasSilinder();
                         break;
 
+                    default:
+                        System.out.println("Data tidak valid!");
+                        break;
+                }
+                break;
+            case 4:
+                System.out.print("\nMasukkan jari-jari bola dalam (cm): ");
+                jari = scanner.nextInt();
+
+                BangunRuang bola = new BangunRuang(jari);
+
+                switch (menu2) {
+                    case 1:
+                        bola.menghitungVolumeBola();
+                    case 2:
+                        bola.menghitungLuasBola();
+                        break;
                     default:
                         System.out.println("Data tidak valid!");
                         break;
