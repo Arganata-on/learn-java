@@ -63,7 +63,7 @@ public class App {
                 break;
             case 3:
                 System.out.print("\nMasukkan jari-jari silinder dalam cm: ");
-                double jari = scanner.nextInt();
+                double jari = scanner.nextDouble();
                 System.out.print("Masukkan tinggi silinder dalam cm: ");
                 tinggi = scanner.nextInt();
 
