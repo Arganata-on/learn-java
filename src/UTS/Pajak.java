@@ -3,9 +3,7 @@ package UTS;
 public class Pajak {
     private String vendor;
     private String tipe;
-    private double harga = 0;
-
-    double ppn = 0;
+    private double harga;
 
     public Pajak(String vendor, String tipe, double harga) {
         this.vendor = vendor;
@@ -25,28 +23,42 @@ public class Pajak {
         return harga;
     }
 
-    public double menghitungHargaPPN() {
+    public void setVendor(String vendor) {
+        this.vendor = vendor;
+    }
 
-        if (harga > 8000000) {
-            ppn = harga * 0.05;
-        } else if (harga > 4500000) {
-            ppn = harga * 0.02;
-        } else if (harga > 4000000) {
-            ppn = harga * 0.01;
+    public void setTipe(String tipe) {
+        this.tipe = tipe;
+    }
+
+    public void setHarga(double harga) {
+        if (harga > 0) {
+            this.harga = harga;
         } else {
-            ppn = 0;
+            System.out.println("Harga tidak valid!");
         }
-        return ppn;
+    }
+
+    public double menghitungHargaPPN() {
+        if (harga > 8000000) {
+            return harga * 0.05;
+        } else if (harga > 4500000) {
+            return harga * 0.02;
+        } else if (harga > 4000000) {
+            return harga * 0.01;
+        } else {
+            return 0;
+        }
     }
 
     public double menghitungHargaIncludePPN() {
-        return ppn + harga;
+        return menghitungHargaPPN() + harga;
     }
 
     public void output() {
-        System.out.println("\nVendor: " + vendor);
-        System.out.println("Tipe: " + tipe);
-        System.out.printf("Harga asli: Rp%,.2f%n", harga);
+        System.out.println("\nVendor: " + getVendor());
+        System.out.println("Tipe: " + getTipe());
+        System.out.printf("Harga asli: Rp%,.2f%n", getHarga());
         System.out.printf("PPN: Rp%,.2f%n", menghitungHargaPPN());
         System.out.printf("Harga setelah PPN: Rp%,.2f%n", menghitungHargaIncludePPN());
     }
