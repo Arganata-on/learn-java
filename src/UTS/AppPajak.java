@@ -6,19 +6,31 @@ import java.util.Scanner;
 public class AppPajak {
     public static void main(String[] args) {
         ArrayList<Pajak> list = new ArrayList<>();
+
         Scanner scanner = new Scanner(System.in);
+
+        String vendor, tipe;
+        double harga;
 
         System.out.print("Masukkan jumlah smartphone yang ingin dihitung: ");
         int jumlahSmartphone = scanner.nextInt();
         scanner.nextLine();
 
         for (int i = 0; i < jumlahSmartphone; i++) {
-            System.out.println("\nMasukkan vendor Smartphone ke-" + (i + 1) + ": ");
-            String vendor = scanner.nextLine();
-            System.out.println("Masukkan tipe Smartphone ke-" + (i + 1) + ": ");
-            String tipe = scanner.nextLine();
-            System.out.println("Masukkan harga Smartphone ke-" + (i + 1) + ": ");
-            double harga = scanner.nextDouble();
+            System.out.print("\nMasukkan vendor Smartphone ke-" + (i + 1) + ": ");
+            vendor = scanner.nextLine();
+            System.out.print("Masukkan tipe Smartphone ke-" + (i + 1) + ": ");
+            tipe = scanner.nextLine();
+
+            do {
+                System.out.print("Masukkan harga Smartphone ke-" + (i + 1) + ": ");
+                harga = scanner.nextDouble();
+
+                if (harga <= 0) {
+                    System.out.println("Harga harus bilangan positif!\n");
+                }
+
+            } while (harga <= 0);
             scanner.nextLine();
 
             list.add(new Pajak(vendor, tipe, harga));
