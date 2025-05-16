@@ -3,7 +3,9 @@ package UTS;
 public class Pajak {
     private String vendor;
     private String tipe;
-    private double harga;
+    private double harga = 0;
+
+    double ppn = 0;
 
     public Pajak(String vendor, String tipe, double harga) {
         this.vendor = vendor;
@@ -23,23 +25,29 @@ public class Pajak {
         return harga;
     }
 
-    public double perhitungan() {
-        double pajak;
+    public double menghitungHargaPPN() {
+
         if (harga > 8000000) {
-            pajak = harga * 0.05;
+            ppn = harga * 0.05;
         } else if (harga > 4500000) {
-            pajak = harga * 0.02;
+            ppn = harga * 0.02;
         } else if (harga > 4000000) {
-            pajak = harga * 0.01;
+            ppn = harga * 0.01;
         } else {
-            pajak = 0;
+            ppn = 0;
         }
-        return harga + pajak;
+        return ppn;
+    }
+
+    public double menghitungHargaIncludePPN() {
+        return ppn + harga;
     }
 
     public void output() {
         System.out.println("\nVendor: " + vendor);
         System.out.println("Tipe: " + tipe);
-        System.out.printf("Harga setelah PPN: Rp%,.2f%n", perhitungan());
+        System.out.printf("Harga asli: Rp%,.2f%n", harga);
+        System.out.printf("PPN: Rp%,.2f%n", menghitungHargaPPN());
+        System.out.printf("Harga setelah PPN: Rp%,.2f%n", menghitungHargaIncludePPN());
     }
 }
