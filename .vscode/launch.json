@@ -6,6 +6,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "AppPajak",
+      "request": "launch",
+      "mainClass": "UTS.AppPajak",
+      "projectName": "learn-java_389383e7"
+    },
+    {
+      "type": "java",
+      "name": "App",
+      "request": "launch",
+      "mainClass": "UTS.App",
+      "projectName": "learn-java_389383e7"
+    },
+    {
+      "type": "java",
+      "name": "SoalCerita",
+      "request": "launch",
+      "mainClass": "SoalCerita",
+      "projectName": "learn-java_389383e7"
+    },
+    {
+      "type": "java",
       "name": "Static",
       "request": "launch",
       "mainClass": "Static",
