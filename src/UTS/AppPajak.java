@@ -9,11 +9,13 @@ public class AppPajak {
 
         Scanner scanner = new Scanner(System.in);
 
+        ValidasiInput validasi = new ValidasiInput();
+
         String vendor, tipe;
         double harga;
 
         System.out.print("Masukkan jumlah smartphone yang ingin dihitung: ");
-        int jumlahSmartphone = scanner.nextInt();
+        int jumlahSmartphone = validasi.validasiInt(scanner);
         scanner.nextLine();
 
         for (int i = 0; i < jumlahSmartphone; i++) {
@@ -24,7 +26,7 @@ public class AppPajak {
 
             do {
                 System.out.print("Masukkan harga Smartphone ke-" + (i + 1) + ": ");
-                harga = scanner.nextDouble();
+                harga = validasi.validasiDouble(scanner);
 
                 if (harga <= 0) {
                     System.out.println("Harga harus bilangan positif!\n");
