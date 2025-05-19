@@ -1,79 +1,59 @@
 package UTS;
 
 public class BangunRuang {
-    int rusuk;
-    double panjang, lebar, tinggi, jari, volume = 0, luas = 0;
-    String nama;
+    int sisi;
+    double panjang, lebar, tinggi, jariJari;
 
-    public BangunRuang(int rusuk) {
-        nama = "Kubus";
-        this.rusuk = rusuk;
+    public BangunRuang(int sisi) {
+        this.sisi = sisi;
     }
 
-    public BangunRuang(int panjang, int lebar, int tinggi) {
-        nama = "Balok";
+    public BangunRuang(double panjang, double lebar, double tinggi) {
         this.panjang = panjang;
         this.lebar = lebar;
         this.tinggi = tinggi;
     }
 
-    public BangunRuang(double jari, int tinggi) {
-        nama = "Silinder";
-        this.jari = jari;
+    public BangunRuang(double jariJari, double tinggi) {
+        this.jariJari = jariJari;
         this.tinggi = tinggi;
     }
 
-    public BangunRuang(double jari) {
-        nama = "Bola";
-        this.jari = jari;
+    public BangunRuang(double jariJari) {
+        this.jariJari = jariJari;
     }
 
-    public void menghitungVolumeKubus() {
-        volume = Math.pow(rusuk, 3);
-        showVolume();
+    public double hitungVolumeKubus() {
+        return Math.pow(sisi, 3);
     }
 
-    public void menghitungLuasKubus() {
-        luas = 6 * (Math.pow(rusuk, 2));
-        showLuas();
+    public double hitungLuasPermukaanKubus() {
+        return 6.0 * Math.pow(sisi, 2);
     }
 
-    public void menghitungVolumeBalok() {
-        volume = panjang * lebar * tinggi;
-        showVolume();
+    public double hitungVolumeBalok() {
+        return panjang * lebar * tinggi;
     }
 
-    public void menghitungLuasBalok() {
-        luas = 2 * ((panjang * lebar) + (panjang * tinggi) + (lebar * tinggi));
-        showLuas();
+    public double hitungLuasPermukaanBalok() {
+        return 2.0 * (panjang * lebar + panjang * tinggi + lebar * tinggi);
     }
 
-    public void menghitungVolumeSilinder() {
-        volume = Math.PI * Math.pow(jari, 2) * tinggi;
-        showVolume();
+    public double hitungVolumeSilinder() {
+        return Math.PI * Math.pow(jariJari, 2) * tinggi;
+
     }
 
-    public void menghitungLuasSilinder() {
-        luas = 2 * Math.PI * jari * (jari + tinggi);
-        showLuas();
+    public double hitungLuasPermukaanSilinder() {
+        return 2.0 * Math.PI * jariJari * (jariJari + tinggi);
     }
 
-    public void menghitungVolumeBola() {
-        volume = 4.0 / 3.0 * Math.PI * Math.pow(jari, 3);
-        showVolume();
+    public double hitungVolumeBola() {
+        return (4.0 / 3.0) * Math.PI * Math.pow(jariJari, 3);
     }
 
-    public void menghitungLuasBola() {
-        luas = 4 * Math.PI * Math.pow(jari, 2);
-        showLuas();
-    }
-
-    public void showVolume() {
-        System.out.println("\nVolume " + nama + ": " + volume + "cm³\n");
-    }
-
-    public void showLuas() {
-        System.out.println("\nLuas " + nama + ": " + luas + "cm²\n");
+    public double hitungLuasPermukaanBola() {
+        return 4.0 * Math.PI * Math.pow(jariJari, 2);
     }
 
 }
