@@ -6,6 +6,146 @@
   "configurations": [
     {
       "type": "java",
+      "name": "MainKendaraan",
+      "request": "launch",
+      "mainClass": "praktikum_inheritance.MainKendaraan",
+      "projectName": "learn-java_389383e7"
+    },
+    {
+      "type": "java",
+      "name": "MethodOverriding",
+      "request": "launch",
+      "mainClass": "method_overriding.MethodOverriding",
+      "projectName": "learn-java_389383e7"
+    },
+    {
+      "type": "java",
+      "name": "Superclass",
+      "request": "launch",
+      "mainClass": "superclass.Superclass",
+      "projectName": "learn-java_389383e7"
+    },
+    {
+      "type": "java",
+      "name": "Main",
+      "request": "launch",
+      "mainClass": "database_rekening.Main",
+      "projectName": "learn-java_389383e7"
+    },
+    {
+      "type": "java",
+      "name": "Main",
+      "request": "launch",
+      "mainClass": "random_numbers.Main",
+      "projectName": "learn-java_389383e7"
+    },
+    {
+      "type": "java",
+      "name": "Main",
+      "request": "launch",
+      "mainClass": "overloaded_constructor.Main",
+      "projectName": "learn-java_389383e7"
+    },
+    {
+      "type": "java",
+      "name": "Main",
+      "request": "launch",
+      "mainClass": "if_statement.Main",
+      "projectName": "learn-java_389383e7"
+    },
+    {
+      "type": "java",
+      "name": "BankApplication",
+      "request": "launch",
+      "mainClass": "bank_application.BankApplication",
+      "projectName": "learn-java_389383e7"
+    },
+    {
+      "type": "java",
+      "name": "Main",
+      "request": "launch",
+      "mainClass": "array_list.Main",
+      "projectName": "learn-java_389383e7"
+    },
+    {
+      "type": "java",
+      "name": "Arithmetic",
+      "request": "launch",
+      "mainClass": "arithmetic.Arithmetic",
+      "projectName": "learn-java_389383e7"
+    },
+    {
+      "type": "java",
+      "name": "Arithmetic",
+      "request": "launch",
+      "mainClass": "Arithmetic",
+      "projectName": "learn-java_389383e7"
+    },
+    {
+      "type": "java",
+      "name": "Main",
+      "request": "launch",
+      "mainClass": "Inheritance.Main",
+      "projectName": "learn-java_389383e7"
+    },
+    {
+      "type": "java",
+      "name": "Inheritance",
+      "request": "launch",
+      "mainClass": "Inheritance.Inheritance",
+      "projectName": "learn-java_389383e7"
+    },
+    {
+      "type": "java",
+      "name": "Toni",
+      "request": "launch",
+      "mainClass": "inheritance.Toni",
+      "projectName": "learn-java_389383e7"
+    },
+    {
+      "type": "java",
+      "name": "ContohVMI",
+      "request": "launch",
+      "mainClass": "inheritance.ContohVMI",
+      "projectName": "learn-java_389383e7"
+    },
+    {
+      "type": "java",
+      "name": "MainKendaraan",
+      "request": "launch",
+      "mainClass": "inheritance.MainKendaraan",
+      "projectName": "learn-java_389383e7"
+    },
+    {
+      "type": "java",
+      "name": "Mainsd",
+      "request": "launch",
+      "mainClass": "Mainsd",
+      "projectName": "learn-java_389383e7"
+    },
+    {
+      "type": "java",
+      "name": "asd",
+      "request": "launch",
+      "mainClass": "asd",
+      "projectName": "learn-java_389383e7"
+    },
+    {
+      "type": "java",
+      "name": "waduh",
+      "request": "launch",
+      "mainClass": "UTS.waduh",
+      "projectName": "learn-java_389383e7"
+    },
+    {
+      "type": "java",
+      "name": "MainProgram",
+      "request": "launch",
+      "mainClass": "UTS.MainProgram",
+      "projectName": "learn-java_389383e7"
+    },
+    {
+      "type": "java",
       "name": "Waduh",
       "request": "launch",
       "mainClass": "UTS.Waduh",
